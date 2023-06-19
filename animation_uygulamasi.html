@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page_Animation</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }   
         body{
             margin: 0;
             padding: 0;
@@ -30,10 +33,11 @@
         .page p {
             font-size: 1.5rem;
         }
-        .page a {
+        /* .page a {
             color: #fff;
-        }
-        .bnt {
+        } */
+        
+        .btn {
             display: inline-block;
             padding: 1rem 2rem;
             background-color: #f4f4f4;
@@ -43,7 +47,7 @@
             font-size: 1.2rem;
             transition: all .3s ease-in;
         }
-        .bnt:hover {
+        .btn:hover {
             background-color: #333;
             color: #fff;
         }
