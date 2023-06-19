@@ -26,11 +26,48 @@
         .page h1{
             font-size: 5rem;
             margin: 2rem;
-        }
+           }
         .page p {
             font-size: 1.5rem;
         }
-        /*7:21 dk..*/
+        .page a {
+            color: #fff;
+        }
+        .bnt {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #f4f4f4;
+            color: #333;
+            text-decoration: none;
+            border: none;
+            font-size: 1.2rem;
+            transition: all .3s ease-in;
+        }
+        .bnt:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        #page-1 h1 {
+            transform: translateY(-800px);
+            animation: h1_a 1s forwards ease-in;
+        }
+
+        #page-1 p {
+            transform: translateX(-2000px);
+            animation: p_a 1s forwards ease-in;
+        }
+
+        @keyframes h1_a {
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes p_a {
+            to {
+                transform: translateX(0);
+            }
+        }
+
     </style>
 </head>
 <body>
